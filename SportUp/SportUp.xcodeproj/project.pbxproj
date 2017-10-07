@@ -87,9 +87,8 @@
 				712CF8741F88A73D009C5C91 /* Info.plist */,
 				714D51271F88A8B400549E67 /* GoogleService-Info.plist */,
 				712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */,
-				71CB904B1F891CB600F453F2 /* UserService.swift */,
-				71CB904D1F89218A00F453F2 /* Constants.swift */,
-				71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */,
+				71CB90511F8923BF00F453F2 /* Services */,
+				71CB90521F8923D200F453F2 /* Supporting Files */,
 			);
 			path = SportUp;
 			sourceTree = "<group>";
@@ -120,6 +119,23 @@
 				714D512F1F88B3FD00549E67 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		71CB90511F8923BF00F453F2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				71CB904B1F891CB600F453F2 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		71CB90521F8923D200F453F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71CB904D1F89218A00F453F2 /* Constants.swift */,
+				71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D86F63F8A4B43712DD165E46 /* Frameworks */ = {
