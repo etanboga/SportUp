@@ -29,19 +29,16 @@ class LoginViewController : UIViewController {
 
 extension LoginViewController : FUIAuthDelegate {
     func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
-        if let error = error {
-            assertionFailure("Error with Firebase login: \(error.localizedDescription)")
-            return
-        }
         guard let user = user
             else { return }
+        
         let userRef = Database.database().reference().child("users").child(user.uid)
-        userRef.observeSingleEvent(of: .value) { (snapshot) in
+        userRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let user = User(snapshot: snapshot) {
                 print("Welcome back, \(user.username).")
             } else {
-                print("New user!")
+                self.performSegue(withIdentifier: "addDetails", sender: self)
             }
-        }
+        })
     }
 }

@@ -10,13 +10,14 @@ import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
 class User {
-    //MARK: Properties
+    
+    // MARK: - Properties
     
     let uid: String
     let username: String
     let phoneNumber: Int
     
-    //MARK: Init
+    // MARK: - Init
     
     init(uid: String, username: String, phoneNumber: Int) {
         self.uid = uid
@@ -24,10 +25,11 @@ class User {
         self.phoneNumber = phoneNumber
     }
     init?(snapshot: DataSnapshot) {
-        guard let dict = snapshot.value as? [String: Any],
-        let username = dict["username"] as? String,
-        let phoneNumber = dict["phonenumber"] as? Int
+        guard let dict = snapshot.value as? [String : Any],
+            let username = dict["username"] as? String,
+            let phoneNumber = dict["phoneNumber"] as? Int
             else { return nil }
+        
         self.uid = snapshot.key
         self.username = username
         self.phoneNumber = phoneNumber
