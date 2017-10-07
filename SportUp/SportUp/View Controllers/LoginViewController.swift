@@ -8,6 +8,9 @@
 import UIKit
 import FirebaseAuth
 import FirebaseAuthUI
+import FirebaseDatabase
+
+typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController : UIViewController {
     override func viewDidLoad() {
@@ -17,7 +20,7 @@ class LoginViewController : UIViewController {
         print("User attempted to login")
         guard let authUI = FUIAuth.defaultAuthUI()
             else { return }
-        authUI.delegate = self as! FUIAuthDelegate
+        authUI.delegate = self as FUIAuthDelegate
         let authViewController = authUI.authViewController()
         self.present(authViewController, animated: true, completion: nil)
     }
@@ -25,7 +28,20 @@ class LoginViewController : UIViewController {
 }
 
 extension LoginViewController : FUIAuthDelegate {
-    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-        print("Fireabase handling signup  or login")
+    func authUI(_ authUI: FUIAuth, didSignInWith user: FIRUser?, error: Error?) {
+        if let error = error {
+            assertionFailure("Error with Firebase login: \(error.localizedDescription)")
+            return
+        }
+        guard let user = user
+            else { return }
+        let userRef = Database.database().reference().child("users").child(user.uid)
+        userRef.observeSingleEvent(of: .value) { (snapshot) in
+            if let user = User(snapshot: snapshot) {
+                print("Welcome back, \(user.username).")
+            } else {
+                print("New user!")
+            }
+        }
     }
 }
