@@ -22,22 +22,15 @@ class AddDetailsViewController : UIViewController {
             let phoneNumber = Int(phoneNumberTextField.text!),
             !((phoneNumberTextField.text?.isEmpty)!),
             !username.isEmpty else { return }
-        
-        let userAttrs = ["username": username, "phoneNumber" : phoneNumber] as [String: Any]
-        
-        let ref = Database.database().reference().child("users").child(firUser.uid)
-        
-        ref.setValue(userAttrs) { (error, ref) in
-            if let error = error {
-                assertionFailure(error.localizedDescription)
-                return
-            }
+        UserService.create(firUser, username: username, phoneNumber: phoneNumber) { (user) in
+            guard let user = user else { return }
+            print("Created new user: \(user.username)")
             
-            ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                let user = User(snapshot: snapshot)
-                
-                // handle newly created user here
-            })
+            User.setCurrent(user)
+    
+            let initialViewController = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
         }
     }
 }

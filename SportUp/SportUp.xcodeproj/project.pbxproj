@@ -18,6 +18,9 @@
 		714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512C1F88AC8D00549E67 /* LoginViewController.swift */; };
 		714D51301F88B3FD00549E67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512F1F88B3FD00549E67 /* User.swift */; };
 		71CB90481F88D7FD00F453F2 /* AddDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB90471F88D7FD00F453F2 /* AddDetailsViewController.swift */; };
+		71CB904C1F891CB600F453F2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904B1F891CB600F453F2 /* UserService.swift */; };
+		71CB904E1F89218A00F453F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904D1F89218A00F453F2 /* Constants.swift */; };
+		71CB90501F8921FC00F453F2 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */; };
 		8D738FEA13F424D990126071 /* Pods_SportUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		714D512C1F88AC8D00549E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		714D512F1F88B3FD00549E67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71CB90471F88D7FD00F453F2 /* AddDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailsViewController.swift; sourceTree = "<group>"; };
+		71CB904B1F891CB600F453F2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		71CB904D1F89218A00F453F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,9 @@
 				712CF8741F88A73D009C5C91 /* Info.plist */,
 				714D51271F88A8B400549E67 /* GoogleService-Info.plist */,
 				712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */,
+				71CB904B1F891CB600F453F2 /* UserService.swift */,
+				71CB904D1F89218A00F453F2 /* Constants.swift */,
+				71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */,
 			);
 			path = SportUp;
 			sourceTree = "<group>";
@@ -270,12 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CB904C1F891CB600F453F2 /* UserService.swift in Sources */,
 				714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */,
 				712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */,
 				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
 				71CB90481F88D7FD00F453F2 /* AddDetailsViewController.swift in Sources */,
 				714D51301F88B3FD00549E67 /* User.swift in Sources */,
+				71CB90501F8921FC00F453F2 /* Storyboard+Utility.swift in Sources */,
 				712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */,
+				71CB904E1F89218A00F453F2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
