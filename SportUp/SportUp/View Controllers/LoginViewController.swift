@@ -14,6 +14,7 @@ typealias FIRUser = FirebaseAuth.User
 
 class LoginViewController : UIViewController {
     override func viewDidLoad() {
+        print("new branch works")
         super.viewDidLoad()
     }
     @IBAction func loginButtonTapped(_: UIButton) {
