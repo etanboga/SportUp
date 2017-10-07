@@ -9,9 +9,10 @@
 import UIKit
 
 class CreateEventViewController : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
-    var selectedSport: String?
-    var selectedLocation: String?
+    var selectedSport: String = ""
+    var selectedLocation: String = ""
 
+    @IBOutlet weak var eventNameTextField: UITextField!
     @IBOutlet weak var locationPickerView: UIPickerView!
     @IBOutlet weak var sportsPickerView: UIPickerView!
     override func viewDidLoad() {
@@ -43,6 +44,15 @@ class CreateEventViewController : UIViewController, UIPickerViewDelegate, UIPick
     
     @IBAction func seeAvailableTimesButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "seeTimes", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationViewController = segue.destination as! FinishEventCreationViewController
+        destinationViewController.eventName = eventNameTextField.text ?? ""
+        let sportIndex = sportsPickerView.selectedRow(inComponent: 0)
+        
+        destinationViewController.selectedSport = Constants.sportsArray[sportIndex]
+        let locationIndex = locationPickerView.selectedRow(inComponent: 0)
+        destinationViewController.selectedLocation = Constants.locationsArray[locationIndex]
     }
 }
 

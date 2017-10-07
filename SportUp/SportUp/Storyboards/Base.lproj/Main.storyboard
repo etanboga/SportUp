@@ -138,6 +138,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2PE-UB-0Az"/>
                     <connections>
+                        <outlet property="eventNameTextField" destination="aB4-rY-I9S" id="aba-6P-gjc"/>
                         <outlet property="locationPickerView" destination="ybb-WM-7Rn" id="h2M-Vg-XVx"/>
                         <outlet property="sportsPickerView" destination="O2T-li-lVc" id="xzQ-Rg-unU"/>
                         <segue destination="HVX-Db-XPN" kind="show" identifier="seeTimes" id="cOH-Dn-N4J"/>
@@ -162,17 +163,20 @@
                                 <state key="normal" title="Create">
                                     <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="createButtonTapped:" destination="HVX-Db-XPN" eventType="touchUpInside" id="9tE-cE-16s"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="l2e-t7-D5j">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="l2e-t7-D5j">
                                 <rect key="frame" x="20" y="427.5" width="335" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Empty Spots:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-fL-ian">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty Spots:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-fL-ian">
                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRQ-De-4qI">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRQ-De-4qI">
                                         <rect key="frame" x="167.5" y="0.0" width="167.5" height="30"/>
                                         <color key="backgroundColor" red="0.033736705780000001" green="0.40219405289999999" blue="0.53343290089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="textColor"/>
@@ -207,6 +211,7 @@
                             <constraint firstItem="FEV-Ah-fda" firstAttribute="top" secondItem="MDd-b4-NcD" secondAttribute="top" id="HUv-JD-BIB"/>
                             <constraint firstItem="FEV-Ah-fda" firstAttribute="height" secondItem="jY9-sW-MZ8" secondAttribute="height" multiplier="0.5" id="Mt6-D2-2OJ"/>
                             <constraint firstItem="lRR-en-z2c" firstAttribute="leading" secondItem="MDd-b4-NcD" secondAttribute="leading" id="Qby-Op-wiH"/>
+                            <constraint firstItem="l2e-t7-D5j" firstAttribute="top" secondItem="FEV-Ah-fda" secondAttribute="bottom" constant="30" id="W19-WD-JoF"/>
                             <constraint firstItem="MDd-b4-NcD" firstAttribute="trailing" secondItem="lRR-en-z2c" secondAttribute="trailing" id="cQO-5U-Cg6"/>
                             <constraint firstItem="l2e-t7-D5j" firstAttribute="leading" secondItem="MDd-b4-NcD" secondAttribute="leading" constant="20" id="lDf-Co-Iau"/>
                             <constraint firstItem="MDd-b4-NcD" firstAttribute="bottom" secondItem="lRR-en-z2c" secondAttribute="bottom" constant="30" id="phX-je-mcI"/>
@@ -215,6 +220,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MDd-b4-NcD"/>
                     </view>
+                    <connections>
+                        <outlet property="emptySpotsTextField" destination="pRQ-De-4qI" id="Ggh-0l-nxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3v-7N-xj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
