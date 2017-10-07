@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let initialVC = storyboard.instantiateInitialViewController() {
             window?.rootViewController = initialVC
             window?.makeKeyAndVisible()
-        }
+   }
         return true
     }
 

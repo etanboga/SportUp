@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FDF7BC51F88D27A00863E43 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF7BC41F88D27A00863E43 /* CreateEventViewController.swift */; };
+		3FDF7BC71F88D38600863E43 /* UpcomingEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF7BC61F88D38600863E43 /* UpcomingEventViewController.swift */; };
+		3FDF7BC91F88D39B00863E43 /* SearchEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDF7BC81F88D39B00863E43 /* SearchEventViewController.swift */; };
 		712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CF8651F88A73D009C5C91 /* AppDelegate.swift */; };
 		712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CF8671F88A73D009C5C91 /* ViewController.swift */; };
 		712CF86B1F88A73D009C5C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712CF8691F88A73D009C5C91 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* Begin PBXFileReference section */
 		17C1FCA3EA2368482135D2A6 /* Pods-SportUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.release.xcconfig"; sourceTree = "<group>"; };
 		2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDF7BC41F88D27A00863E43 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		3FDF7BC61F88D38600863E43 /* UpcomingEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventViewController.swift; sourceTree = "<group>"; };
+		3FDF7BC81F88D39B00863E43 /* SearchEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventViewController.swift; sourceTree = "<group>"; };
 		712CF8621F88A73D009C5C91 /* SportUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712CF8651F88A73D009C5C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		712CF8671F88A73D009C5C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 			children = (
 				712CF8671F88A73D009C5C91 /* ViewController.swift */,
 				714D512C1F88AC8D00549E67 /* LoginViewController.swift */,
+				3FDF7BC41F88D27A00863E43 /* CreateEventViewController.swift */,
+				3FDF7BC61F88D38600863E43 /* UpcomingEventViewController.swift */,
+				3FDF7BC81F88D39B00863E43 /* SearchEventViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -268,10 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */,
+				3FDF7BC91F88D39B00863E43 /* SearchEventViewController.swift in Sources */,
 				712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */,
+				3FDF7BC71F88D38600863E43 /* UpcomingEventViewController.swift in Sources */,
 				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
 				714D51301F88B3FD00549E67 /* User.swift in Sources */,
 				712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */,
+				3FDF7BC51F88D27A00863E43 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
