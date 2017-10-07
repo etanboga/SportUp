@@ -25,11 +25,11 @@ class User: NSObject {
     
     let uid: String
     let username: String
-    let phoneNumber: Int
+    let phoneNumber: String
     
     // MARK: - Init
     
-    init(uid: String, username: String, phoneNumber: Int) {
+    init(uid: String, username: String, phoneNumber: String) {
         self.uid = uid
         self.username = username
         self.phoneNumber = phoneNumber
@@ -38,7 +38,7 @@ class User: NSObject {
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             let username = dict["username"] as? String,
-            let phoneNumber = dict["phoneNumber"] as? Int
+            let phoneNumber = dict["phoneNumber"] as? String
             else { return nil }
         
         self.uid = snapshot.key
@@ -62,9 +62,10 @@ class User: NSObject {
     
     required init?(coder aDecoder: NSCoder) {
         guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
-            let username = aDecoder.decodeObject(forKey: Constants.UserDefaults.username) as? String
+            let username = aDecoder.decodeObject(forKey: Constants.UserDefaults.username) as? String,
+            let phoneNumber = aDecoder.decodeObject(forKey: Constants.UserDefaults.phoneNumber) as? String
             else { return nil }
-            let phoneNumber = aDecoder.decodeInteger(forKey: Constants.UserDefaults.phoneNumber)
+
 
         
         self.uid = uid

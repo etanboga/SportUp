@@ -33,11 +33,11 @@ class CreateEventViewController : UIViewController, UIPickerViewDelegate, UIPick
     func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         if pickerView == sportsPickerView {
             let titleData = Constants.sportsArray[row]
-            let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+            let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.foregroundColor:UIColor(rgb: Constants.whiteishColor)])
             return myTitle
         } else {
                 let titleData = Constants.locationsArray[row]
-                let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+                let myTitle = NSAttributedString(string: titleData, attributes: [NSAttributedStringKey.foregroundColor:UIColor(rgb: Constants.whiteishColor)])
             return myTitle
         }
     }

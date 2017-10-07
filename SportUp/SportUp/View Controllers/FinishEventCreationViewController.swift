@@ -28,11 +28,13 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath)
         cell.textLabel?.text = Constants.timeArray[indexPath.row]
+        cell.textLabel?.textColor = UIColor(rgb: Constants.whiteishColor)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)
         timeFrame = currentCell?.textLabel?.text ?? ""
+        currentCell?.backgroundColor = UIColor(rgb: Constants.darkBlue)
     }
     
     @IBAction func createButtonTapped(_ sender: UIButton) {

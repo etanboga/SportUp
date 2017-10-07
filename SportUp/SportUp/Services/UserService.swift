@@ -11,7 +11,7 @@ import FirebaseAuth.FIRUser
 import FirebaseDatabase
 
 struct UserService {
-    static func create(_ firUser: FIRUser, username: String, phoneNumber: Int, completion: @escaping (User?) -> Void) {
+    static func create(_ firUser: FIRUser, username: String, phoneNumber: String, completion: @escaping (User?) -> Void) {
         let userAttrs = ["username": username, "phoneNumber": phoneNumber] as [String : Any]
         
         let ref = Database.database().reference().child("users").child(firUser.uid)
