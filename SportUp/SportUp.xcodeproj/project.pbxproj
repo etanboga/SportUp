@@ -14,6 +14,8 @@
 		712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712CF86F1F88A73D009C5C91 /* Assets.xcassets */; };
 		712CF8731F88A73D009C5C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */; };
 		714D51281F88A9A600549E67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 714D51271F88A8B400549E67 /* GoogleService-Info.plist */; };
+		714D512A1F88AC1100549E67 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714D51291F88AC1100549E67 /* Login.storyboard */; };
+		714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512C1F88AC8D00549E67 /* LoginViewController.swift */; };
 		8D738FEA13F424D990126071 /* Pods_SportUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		712CF8721F88A73D009C5C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712CF8741F88A73D009C5C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714D51271F88A8B400549E67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		714D51291F88AC1100549E67 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		714D512C1F88AC8D00549E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,15 +70,33 @@
 			isa = PBXGroup;
 			children = (
 				712CF8651F88A73D009C5C91 /* AppDelegate.swift */,
-				712CF8671F88A73D009C5C91 /* ViewController.swift */,
-				712CF8691F88A73D009C5C91 /* Main.storyboard */,
+				714D512E1F88AC9900549E67 /* View Controllers */,
+				714D512B1F88AC2100549E67 /* Storyboards */,
 				712CF86F1F88A73D009C5C91 /* Assets.xcassets */,
-				712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */,
 				712CF8741F88A73D009C5C91 /* Info.plist */,
 				714D51271F88A8B400549E67 /* GoogleService-Info.plist */,
 				712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */,
 			);
 			path = SportUp;
+			sourceTree = "<group>";
+		};
+		714D512B1F88AC2100549E67 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				712CF8691F88A73D009C5C91 /* Main.storyboard */,
+				712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */,
+				714D51291F88AC1100549E67 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		714D512E1F88AC9900549E67 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				712CF8671F88A73D009C5C91 /* ViewController.swift */,
+				714D512C1F88AC8D00549E67 /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		D86F63F8A4B43712DD165E46 /* Frameworks */ = {
@@ -159,6 +181,7 @@
 				712CF8731F88A73D009C5C91 /* LaunchScreen.storyboard in Resources */,
 				714D51281F88A9A600549E67 /* GoogleService-Info.plist in Resources */,
 				712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */,
+				714D512A1F88AC1100549E67 /* Login.storyboard in Resources */,
 				712CF86B1F88A73D009C5C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */,
 				712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */,
 				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
 				712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */,

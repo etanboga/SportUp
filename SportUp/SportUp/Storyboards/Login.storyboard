@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zlb-j6-fGi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="KJE-Bz-Tfq">
+            <objects>
+                <viewController id="zlb-j6-fGi" customClass="LoginViewController" customModule="SportUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YwG-Fq-8Pi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foV-4P-2g0">
+                                <rect key="frame" x="0.0" y="317" width="375" height="53"/>
+                                <color key="backgroundColor" red="0.031372549019607843" green="0.40392156862745099" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login or Sign Up!">
+                                    <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="zlb-j6-fGi" eventType="touchUpInside" id="Gm0-fe-IFe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SportUp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dk-Y5-HH2">
+                                <rect key="frame" x="0.0" y="70" width="375" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find and join sports events near you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bW-sc-0nY">
+                                <rect key="frame" x="20" y="198" width="335" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.027450980392156862" green="0.62745098039215685" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="foV-4P-2g0" firstAttribute="centerY" secondItem="0ju-YD-k7a" secondAttribute="centerY" id="1h0-wc-npm"/>
+                            <constraint firstItem="6dk-Y5-HH2" firstAttribute="leading" secondItem="0ju-YD-k7a" secondAttribute="leading" id="5dg-b0-bgS"/>
+                            <constraint firstItem="foV-4P-2g0" firstAttribute="height" secondItem="YwG-Fq-8Pi" secondAttribute="height" multiplier="0.08" id="MeO-7r-pCi"/>
+                            <constraint firstItem="6dk-Y5-HH2" firstAttribute="top" secondItem="0ju-YD-k7a" secondAttribute="top" constant="50" id="ONB-iA-LSP"/>
+                            <constraint firstItem="foV-4P-2g0" firstAttribute="leading" secondItem="0ju-YD-k7a" secondAttribute="leading" id="Rko-uD-R3b"/>
+                            <constraint firstItem="0ju-YD-k7a" firstAttribute="trailing" secondItem="6dk-Y5-HH2" secondAttribute="trailing" id="gFS-9M-0K7"/>
+                            <constraint firstItem="6bW-sc-0nY" firstAttribute="top" secondItem="6dk-Y5-HH2" secondAttribute="bottom" constant="80" id="j79-y7-oym"/>
+                            <constraint firstItem="6bW-sc-0nY" firstAttribute="leading" secondItem="0ju-YD-k7a" secondAttribute="leading" constant="20" id="pKh-H2-IWe"/>
+                            <constraint firstItem="0ju-YD-k7a" firstAttribute="trailing" secondItem="foV-4P-2g0" secondAttribute="trailing" id="pdh-n0-Ur1"/>
+                            <constraint firstAttribute="trailing" secondItem="6bW-sc-0nY" secondAttribute="trailing" constant="20" id="wo6-dU-QKO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ju-YD-k7a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4d-jo-wES" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="185"/>
+        </scene>
+    </scenes>
+</document>
