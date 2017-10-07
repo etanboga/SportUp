@@ -12,4 +12,8 @@ class SearchViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    @IBAction func searchButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "showResults", sender: self)
+    }
 }

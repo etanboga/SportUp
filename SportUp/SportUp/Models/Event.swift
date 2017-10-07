@@ -10,7 +10,7 @@ import Foundation
 import FirebaseDatabase.FIRDataSnapshot
 
 
-class Event{
+class Event {
     //create lets for everything
     let eventID: String
     let eventName: String
@@ -19,9 +19,9 @@ class Event{
     let eventLocation: String
     let creatorContact: String
     let emptySpot: Int
-    let time: [Int]
+    let time: String
     
-    init(eventID: String, eventName: String, creatorID: String, eventSport: String, eventLocation: String, creatorContact: String, emptySpot: Int, time: [Int]) {
+    init(eventID: String, eventName: String, creatorID: String, eventSport: String, eventLocation: String, creatorContact: String, emptySpot: Int, time: String) {
         self.eventID = eventID
         self.eventName = eventName
         self.creatorID = creatorID
@@ -38,7 +38,7 @@ class Event{
             let eventSport = dict1["eventSport"] as? String,
             let eventLocation = dict1["eventLocation"] as? String,
             let  emptySpot = dict1["emptySpot"] as? Int,
-            let time = dict1["time"] as? [Int]
+            let time = dict1["time"] as? String
             else { return nil }
             let creatorID: String = User.current.uid
             let creatorContact: String  = User.current.phoneNumber
