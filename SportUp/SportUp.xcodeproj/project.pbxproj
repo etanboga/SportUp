@@ -24,6 +24,7 @@
 		71CB904C1F891CB600F453F2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904B1F891CB600F453F2 /* UserService.swift */; };
 		71CB904E1F89218A00F453F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904D1F89218A00F453F2 /* Constants.swift */; };
 		71CB90501F8921FC00F453F2 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */; };
+		71F56BAD1F8950DB002EA8E9 /* FinishEventCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F56BAC1F8950DB002EA8E9 /* FinishEventCreationViewController.swift */; };
 		8D738FEA13F424D990126071 /* Pods_SportUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		71CB904B1F891CB600F453F2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		71CB904D1F89218A00F453F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71CB904F1F8921FC00F453F2 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		71F56BAC1F8950DB002EA8E9 /* FinishEventCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishEventCreationViewController.swift; sourceTree = "<group>"; };
 		8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				715846901F8934DE0068DEF1 /* CreateEventViewController.swift */,
 				715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */,
 				715846961F89353B0068DEF1 /* SearchViewController.swift */,
+				71F56BAC1F8950DB002EA8E9 /* FinishEventCreationViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				7158468F1F8933960068DEF1 /* MainTabBarController.swift in Sources */,
 				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
 				71CB90481F88D7FD00F453F2 /* AddDetailsViewController.swift in Sources */,
+				71F56BAD1F8950DB002EA8E9 /* FinishEventCreationViewController.swift in Sources */,
 				714D51301F88B3FD00549E67 /* User.swift in Sources */,
 				715846971F89353B0068DEF1 /* SearchViewController.swift in Sources */,
 				71CB90501F8921FC00F453F2 /* Storyboard+Utility.swift in Sources */,
