@@ -13,6 +13,7 @@
 		712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */; };
 		712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712CF86F1F88A73D009C5C91 /* Assets.xcassets */; };
 		712CF8731F88A73D009C5C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */; };
+		714D51281F88A9A600549E67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 714D51271F88A8B400549E67 /* GoogleService-Info.plist */; };
 		8D738FEA13F424D990126071 /* Pods_SportUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		712CF86F1F88A73D009C5C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		712CF8721F88A73D009C5C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		712CF8741F88A73D009C5C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714D51271F88A8B400549E67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				712CF86F1F88A73D009C5C91 /* Assets.xcassets */,
 				712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */,
 				712CF8741F88A73D009C5C91 /* Info.plist */,
+				714D51271F88A8B400549E67 /* GoogleService-Info.plist */,
 				712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */,
 			);
 			path = SportUp;
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				712CF8731F88A73D009C5C91 /* LaunchScreen.storyboard in Resources */,
+				714D51281F88A9A600549E67 /* GoogleService-Info.plist in Resources */,
 				712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */,
 				712CF86B1F88A73D009C5C91 /* Main.storyboard in Resources */,
 			);
@@ -193,7 +197,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SportUp/Pods-SportUp-resources.sh",
-				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
