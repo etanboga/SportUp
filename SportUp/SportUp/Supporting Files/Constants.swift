@@ -12,4 +12,10 @@ struct Constants {
     struct Segue {
     static let addDetails = "addDetails"
     }
+    struct UserDefaults {
+        static let currentUser = "currentUser"
+        static let uid = "uid"
+        static let username = "username"
+        static let phoneNumber = "phoneNumber"
+    }
 }

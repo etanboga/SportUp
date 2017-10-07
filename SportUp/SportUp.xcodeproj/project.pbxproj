@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CF8651F88A73D009C5C91 /* AppDelegate.swift */; };
-		712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CF8671F88A73D009C5C91 /* ViewController.swift */; };
 		712CF86B1F88A73D009C5C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712CF8691F88A73D009C5C91 /* Main.storyboard */; };
 		712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */; };
 		712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712CF86F1F88A73D009C5C91 /* Assets.xcassets */; };
@@ -17,6 +16,10 @@
 		714D512A1F88AC1100549E67 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714D51291F88AC1100549E67 /* Login.storyboard */; };
 		714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512C1F88AC8D00549E67 /* LoginViewController.swift */; };
 		714D51301F88B3FD00549E67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512F1F88B3FD00549E67 /* User.swift */; };
+		7158468F1F8933960068DEF1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158468E1F8933960068DEF1 /* MainTabBarController.swift */; };
+		715846911F8934DE0068DEF1 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846901F8934DE0068DEF1 /* CreateEventViewController.swift */; };
+		715846931F8935020068DEF1 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */; };
+		715846971F89353B0068DEF1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846961F89353B0068DEF1 /* SearchViewController.swift */; };
 		71CB90481F88D7FD00F453F2 /* AddDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB90471F88D7FD00F453F2 /* AddDetailsViewController.swift */; };
 		71CB904C1F891CB600F453F2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904B1F891CB600F453F2 /* UserService.swift */; };
 		71CB904E1F89218A00F453F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB904D1F89218A00F453F2 /* Constants.swift */; };
@@ -29,7 +32,6 @@
 		2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		712CF8621F88A73D009C5C91 /* SportUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		712CF8651F88A73D009C5C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		712CF8671F88A73D009C5C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		712CF86A1F88A73D009C5C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		712CF86D1F88A73D009C5C91 /* SportUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportUp.xcdatamodel; sourceTree = "<group>"; };
 		712CF86F1F88A73D009C5C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +41,10 @@
 		714D51291F88AC1100549E67 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		714D512C1F88AC8D00549E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		714D512F1F88B3FD00549E67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7158468E1F8933960068DEF1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		715846901F8934DE0068DEF1 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
+		715846961F89353B0068DEF1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		71CB90471F88D7FD00F453F2 /* AddDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDetailsViewController.swift; sourceTree = "<group>"; };
 		71CB904B1F891CB600F453F2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		71CB904D1F89218A00F453F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -106,9 +112,12 @@
 		714D512E1F88AC9900549E67 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				712CF8671F88A73D009C5C91 /* ViewController.swift */,
 				714D512C1F88AC8D00549E67 /* LoginViewController.swift */,
 				71CB90471F88D7FD00F453F2 /* AddDetailsViewController.swift */,
+				7158468E1F8933960068DEF1 /* MainTabBarController.swift */,
+				715846901F8934DE0068DEF1 /* CreateEventViewController.swift */,
+				715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */,
+				715846961F89353B0068DEF1 /* SearchViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -297,13 +306,16 @@
 			files = (
 				71CB904C1F891CB600F453F2 /* UserService.swift in Sources */,
 				714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */,
-				712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */,
+				7158468F1F8933960068DEF1 /* MainTabBarController.swift in Sources */,
 				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
 				71CB90481F88D7FD00F453F2 /* AddDetailsViewController.swift in Sources */,
 				714D51301F88B3FD00549E67 /* User.swift in Sources */,
+				715846971F89353B0068DEF1 /* SearchViewController.swift in Sources */,
 				71CB90501F8921FC00F453F2 /* Storyboard+Utility.swift in Sources */,
+				715846911F8934DE0068DEF1 /* CreateEventViewController.swift in Sources */,
 				712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */,
 				71CB904E1F89218A00F453F2 /* Constants.swift in Sources */,
+				715846931F8935020068DEF1 /* UpcomingEventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

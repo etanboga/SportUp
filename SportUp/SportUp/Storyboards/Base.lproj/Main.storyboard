@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKb-Rh-url">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Upcoming-->
+        <scene sceneID="uDE-3L-3r6">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Waj-zJ-VYN" customClass="UpcomingEventsViewController" customModule="SportUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wH1-td-7KT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="WFu-Yq-0ib"/>
                     </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Upcoming" image="icons8-Event Filled-50" selectedImage="icons8-Event Filled-50" id="RGA-ue-Anp"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxT-SV-Pxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-790" y="623"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="6wv-J6-yQJ">
+            <objects>
+                <viewController id="ucq-j7-wAF" customClass="SearchViewController" customModule="SportUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNQ-pg-0hd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="YN3-hv-GeJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" systemItem="search" id="F2c-Qg-Bvl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tth-G0-gIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="448"/>
+        </scene>
+        <!--Create-->
+        <scene sceneID="Frw-Ci-H1g">
+            <objects>
+                <viewController id="rPv-kC-FwF" customClass="CreateEventViewController" customModule="SportUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kcd-9T-A5y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="vQo-Qh-A83"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Create" image="icons8-Create Filled-50" selectedImage="icons8-Create Filled-50" id="E2v-Ne-HMt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sx4-aE-dBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="-482"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="3Ei-5L-D5I">
+            <objects>
+                <tabBarController id="hKb-Rh-url" customClass="MainTabBarController" customModule="SportUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wkl-CL-F1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rPv-kC-FwF" kind="relationship" relationship="viewControllers" id="vxz-wC-4Ry"/>
+                        <segue destination="Waj-zJ-VYN" kind="relationship" relationship="viewControllers" id="Bt2-37-mt1"/>
+                        <segue destination="ucq-j7-wAF" kind="relationship" relationship="viewControllers" id="Tdv-5v-0O1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQY-6v-RTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1004" y="-207"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-Create Filled-50" width="25" height="25"/>
+        <image name="icons8-Event Filled-50" width="25" height="25"/>
+    </resources>
 </document>
