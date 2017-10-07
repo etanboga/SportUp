@@ -1,19 +1,15 @@
 //
-//  CreateEventViewController.swift
+//  MainTabBarController.swift
 //  SportUp
 //
-<<<<<<< HEAD
-//  Created by Shrey Kakkar on 10/7/17.
-=======
 //  Created by Ege Tanboga on 10/7/17.
->>>>>>> Ege
 //  Copyright © 2017 Tanbooz. All rights reserved.
 //
 
 import UIKit
-
-class CreateEventViewController : UIViewController {
+class MainTabBarController : UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.selectedIndex = 1
     }
 }
