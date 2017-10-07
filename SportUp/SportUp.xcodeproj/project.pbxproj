@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CF8651F88A73D009C5C91 /* AppDelegate.swift */; };
+		712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CF8671F88A73D009C5C91 /* ViewController.swift */; };
+		712CF86B1F88A73D009C5C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712CF8691F88A73D009C5C91 /* Main.storyboard */; };
+		712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */; };
+		712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712CF86F1F88A73D009C5C91 /* Assets.xcassets */; };
+		712CF8731F88A73D009C5C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */; };
+		8D738FEA13F424D990126071 /* Pods_SportUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17C1FCA3EA2368482135D2A6 /* Pods-SportUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.release.xcconfig"; sourceTree = "<group>"; };
+		2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		712CF8621F88A73D009C5C91 /* SportUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		712CF8651F88A73D009C5C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		712CF8671F88A73D009C5C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		712CF86A1F88A73D009C5C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		712CF86D1F88A73D009C5C91 /* SportUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportUp.xcdatamodel; sourceTree = "<group>"; };
+		712CF86F1F88A73D009C5C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		712CF8721F88A73D009C5C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		712CF8741F88A73D009C5C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportUp/Pods-SportUp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		712CF85F1F88A73D009C5C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D738FEA13F424D990126071 /* Pods_SportUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		712CF8591F88A73D009C5C91 = {
+			isa = PBXGroup;
+			children = (
+				712CF8641F88A73D009C5C91 /* SportUp */,
+				712CF8631F88A73D009C5C91 /* Products */,
+				E3A1B3B7E1E672AB195AB36E /* Pods */,
+				D86F63F8A4B43712DD165E46 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		712CF8631F88A73D009C5C91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				712CF8621F88A73D009C5C91 /* SportUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		712CF8641F88A73D009C5C91 /* SportUp */ = {
+			isa = PBXGroup;
+			children = (
+				712CF8651F88A73D009C5C91 /* AppDelegate.swift */,
+				712CF8671F88A73D009C5C91 /* ViewController.swift */,
+				712CF8691F88A73D009C5C91 /* Main.storyboard */,
+				712CF86F1F88A73D009C5C91 /* Assets.xcassets */,
+				712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */,
+				712CF8741F88A73D009C5C91 /* Info.plist */,
+				712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */,
+			);
+			path = SportUp;
+			sourceTree = "<group>";
+		};
+		D86F63F8A4B43712DD165E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E29AA4EA45F4CF93E1713A3 /* Pods_SportUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3A1B3B7E1E672AB195AB36E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */,
+				17C1FCA3EA2368482135D2A6 /* Pods-SportUp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		712CF8611F88A73D009C5C91 /* SportUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 712CF8771F88A73D009C5C91 /* Build configuration list for PBXNativeTarget "SportUp" */;
+			buildPhases = (
+				FC95E9FF371979173C29DB9C /* [CP] Check Pods Manifest.lock */,
+				712CF85E1F88A73D009C5C91 /* Sources */,
+				712CF85F1F88A73D009C5C91 /* Frameworks */,
+				712CF8601F88A73D009C5C91 /* Resources */,
+				804241E61EE8C52F31EB720A /* [CP] Embed Pods Frameworks */,
+				F83078836614E90584065E7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SportUp;
+			productName = SportUp;
+			productReference = 712CF8621F88A73D009C5C91 /* SportUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		712CF85A1F88A73D009C5C91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Tanbooz;
+				TargetAttributes = {
+					712CF8611F88A73D009C5C91 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 712CF85D1F88A73D009C5C91 /* Build configuration list for PBXProject "SportUp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 712CF8591F88A73D009C5C91;
+			productRefGroup = 712CF8631F88A73D009C5C91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				712CF8611F88A73D009C5C91 /* SportUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		712CF8601F88A73D009C5C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712CF8731F88A73D009C5C91 /* LaunchScreen.storyboard in Resources */,
+				712CF8701F88A73D009C5C91 /* Assets.xcassets in Resources */,
+				712CF86B1F88A73D009C5C91 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		804241E61EE8C52F31EB720A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SportUp/Pods-SportUp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SportUp/Pods-SportUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F83078836614E90584065E7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SportUp/Pods-SportUp-resources.sh",
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SportUp/Pods-SportUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC95E9FF371979173C29DB9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		712CF85E1F88A73D009C5C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712CF8681F88A73D009C5C91 /* ViewController.swift in Sources */,
+				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
+				712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		712CF8691F88A73D009C5C91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712CF86A1F88A73D009C5C91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		712CF8711F88A73D009C5C91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712CF8721F88A73D009C5C91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		712CF8751F88A73D009C5C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		712CF8761F88A73D009C5C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		712CF8781F88A73D009C5C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B27F1FB17713ACEBE69B90A /* Pods-SportUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S3TJ7SG4W;
+				INFOPLIST_FILE = SportUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.egetanboga.SportUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		712CF8791F88A73D009C5C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C1FCA3EA2368482135D2A6 /* Pods-SportUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3S3TJ7SG4W;
+				INFOPLIST_FILE = SportUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.egetanboga.SportUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		712CF85D1F88A73D009C5C91 /* Build configuration list for PBXProject "SportUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712CF8751F88A73D009C5C91 /* Debug */,
+				712CF8761F88A73D009C5C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		712CF8771F88A73D009C5C91 /* Build configuration list for PBXNativeTarget "SportUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712CF8781F88A73D009C5C91 /* Debug */,
+				712CF8791F88A73D009C5C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		712CF86C1F88A73D009C5C91 /* SportUp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				712CF86D1F88A73D009C5C91 /* SportUp.xcdatamodel */,
+			);
+			currentVersion = 712CF86D1F88A73D009C5C91 /* SportUp.xcdatamodel */;
+			path = SportUp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 712CF85A1F88A73D009C5C91 /* Project object */;
+}
