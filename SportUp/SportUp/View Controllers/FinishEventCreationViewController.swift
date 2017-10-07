@@ -46,6 +46,9 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
         print(User.current.phoneNumber)
         print(emptySpots)
         print(timeFrame)
+        EventService.createEvent(name: eventName, userID: User.current.uid, sport: selectedSport, location: selectedLocation, contact: User.current.phoneNumber, remainingSpots: emptySpots, time: timeFrame, completion: {(returnedEvent) in
+            //do nothing
+        })
         
     }
     

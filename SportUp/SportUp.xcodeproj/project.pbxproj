@@ -133,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				714D512F1F88B3FD00549E67 /* User.swift */,
-				71F56BAE1F896DC1002EA8E9 /* EventService.swift */,
 				71F56BB01F896E35002EA8E9 /* Event.swift */,
 			);
 			path = Models;
@@ -142,6 +141,7 @@
 		71CB90511F8923BF00F453F2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				71F56BAE1F896DC1002EA8E9 /* EventService.swift */,
 				71CB904B1F891CB600F453F2 /* UserService.swift */,
 			);
 			path = Services;
