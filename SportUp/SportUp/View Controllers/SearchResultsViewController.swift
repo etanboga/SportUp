@@ -7,7 +7,11 @@
 //
 
 import UIKit
+
+
+
 class SearchResultsViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     @IBOutlet weak var searchResultsTableView: UITableView!
     var eventArray = [Event] ()
     var selectedEvent: Event?
@@ -27,7 +31,24 @@ class SearchResultsViewController : UIViewController, UITableViewDataSource, UIT
         cell.sport.text = eventArray[indexPath.row].eventSport
         cell.time.text = "\(eventArray[indexPath.row].date) @: \(eventArray[indexPath.row].time)"
         cell.emptySpots.text = "Empty Spots: \(eventArray[indexPath.row].emptySpot)"
+        cell.tapped = { [unowned self] (selectedCell) -> Void in
+            let path = tableView.indexPathForRow(at: selectedCell.center)!
+            let selectedItem = self.eventArray[path.row]
+            print("the selected item is \(selectedItem.creatorContact)")
+            print("the selected item is \(selectedItem.eventName)")
+            self.callNumber(phoneNumber: selectedItem.creatorContact)
+        }
         return cell
+    }
+    private func callNumber(phoneNumber: String) {
+        
+        if let phoneCallURL = URL(string: "tel:\(phoneNumber)") {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
     }
 }
 

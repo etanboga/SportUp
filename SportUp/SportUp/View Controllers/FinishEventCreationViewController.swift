@@ -22,6 +22,7 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
         print(selectedLocation)
         print(selectedSport)
         print(eventName)
+        formatDatePicker()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Constants.timeArray.count
@@ -36,7 +37,9 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)
         timeFrame = currentCell?.textLabel?.text ?? ""
-        currentCell?.backgroundColor = UIColor(rgb: Constants.darkBlue)
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor(rgb: Constants.darkBlue)
+        currentCell?.selectedBackgroundView = bgColorView
     }
     
     @IBAction func createButtonTapped(_ sender: UIButton) {

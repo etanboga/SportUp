@@ -9,9 +9,9 @@
 import UIKit
 
 class SearchResultCell: UITableViewCell {
-
+    var tapped: ((SearchResultCell) -> Void)?
     @IBAction func contactButtonTapped(_ sender: UIButton) {
-                callNumber()
+        tapped?(self)
     }
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var emptySpots: UILabel!
