@@ -17,6 +17,7 @@
 		714D512D1F88AC8D00549E67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512C1F88AC8D00549E67 /* LoginViewController.swift */; };
 		714D51301F88B3FD00549E67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512F1F88B3FD00549E67 /* User.swift */; };
 		7150B5B81F8997DC00536DA0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150B5B71F8997DC00536DA0 /* SearchResultsViewController.swift */; };
+		7150B5BC1F89DEB900536DA0 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150B5BB1F89DEB900536DA0 /* SearchResultCell.swift */; };
 		7158468F1F8933960068DEF1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158468E1F8933960068DEF1 /* MainTabBarController.swift */; };
 		715846911F8934DE0068DEF1 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846901F8934DE0068DEF1 /* CreateEventViewController.swift */; };
 		715846931F8935020068DEF1 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */; };
@@ -47,6 +48,7 @@
 		714D512C1F88AC8D00549E67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		714D512F1F88B3FD00549E67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7150B5B71F8997DC00536DA0 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		7150B5BB1F89DEB900536DA0 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		7158468E1F8933960068DEF1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		715846901F8934DE0068DEF1 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				71F56BB21F89879D002EA8E9 /* EventCell.swift */,
+				7150B5BB1F89DEB900536DA0 /* SearchResultCell.swift */,
 			);
 			path = "Cocoa Touch Classes";
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				71F56BB31F89879D002EA8E9 /* EventCell.swift in Sources */,
 				712CF86E1F88A73D009C5C91 /* SportUp.xcdatamodeld in Sources */,
 				71CB904E1F89218A00F453F2 /* Constants.swift in Sources */,
+				7150B5BC1F89DEB900536DA0 /* SearchResultCell.swift in Sources */,
 				715846931F8935020068DEF1 /* UpcomingEventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

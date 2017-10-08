@@ -9,6 +9,8 @@
 import UIKit
 
 class FinishEventCreationViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var emptySpotsTextField: UITextField!
     var selectedSport: String = ""
     var selectedLocation: String = ""
@@ -46,13 +48,27 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
         print(User.current.phoneNumber)
         print(emptySpots)
         print(timeFrame)
-        EventService.createEvent(name: eventName, userID: User.current.uid, sport: selectedSport, location: selectedLocation, contact: User.current.phoneNumber, remainingSpots: emptySpots, time: timeFrame, completion: {(returnedEvent) in
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yy"
+        var selectedDate = dateFormatter.string(from: datePicker.date)
+        selectedDate = selectedDate.replacingOccurrences(of: "/", with: "-")
+    
+       print(selectedDate)
+        EventService.createEvent(name: eventName, userID: User.current.uid, sport: selectedSport, location: selectedLocation, contact: User.current.phoneNumber, remainingSpots: emptySpots, time: timeFrame, date: selectedDate, completion: {(returnedEvent) in
         })
         self.navigationController?.popToRootViewController(animated: false)
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabBarController : UITabBarController = storyboard.instantiateViewController(withIdentifier: "mainTabBarVC") as! UITabBarController
         mainTabBarController.selectedIndex = 1
         self.present(mainTabBarController, animated: true, completion: nil)
+    }
+    
+    func formatDatePicker() {
+        
+        datePicker.datePickerMode = .date
+        datePicker.layer.masksToBounds = true
+        datePicker.setValue(UIColor(rgb: Constants.whiteishColor), forKey: "textColor")
+        datePicker.sizeToFit()
     }
     
 }

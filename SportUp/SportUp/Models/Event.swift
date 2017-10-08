@@ -20,8 +20,9 @@ class Event {
     let creatorContact: String
     let emptySpot: Int
     let time: String
+    let date: String
     
-    init(eventID: String, eventName: String, creatorID: String, eventSport: String, eventLocation: String, creatorContact: String, emptySpot: Int, time: String) {
+    init(eventID: String, eventName: String, creatorID: String, eventSport: String, eventLocation: String, creatorContact: String, emptySpot: Int, time: String, date: String) {
         self.eventID = eventID
         self.eventName = eventName
         self.creatorID = creatorID
@@ -30,6 +31,7 @@ class Event {
         self.creatorContact = creatorContact
         self.emptySpot = emptySpot
         self.time = time
+        self.date = date
     }
     
     init?(snapshot: DataSnapshot) {
@@ -40,7 +42,8 @@ class Event {
             let  emptySpot = dict1["emptySpots"] as? Int,
             let time = dict1["time"] as? String,
             let creatorID = dict1["creator"] as? String,
-            let creatorContact = dict1["contact"] as? String
+            let creatorContact = dict1["contact"] as? String,
+            let date = dict1["date"] as? String
             else { return nil }
         
         self.eventID = snapshot.key
@@ -51,6 +54,7 @@ class Event {
         self.creatorContact = creatorContact
         self.emptySpot = emptySpot
         self.time = time
+        self.date = date
         
     }
 }

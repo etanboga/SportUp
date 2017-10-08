@@ -29,7 +29,7 @@ class UpcomingEventsViewController : UIViewController, UITableViewDelegate, UITa
         cell.eventName.text = eventArray[indexPath.row].eventName
         cell.eventLocation.text = eventArray[indexPath.row].eventLocation
         cell.eventSport.text = eventArray[indexPath.row].eventSport
-        cell.eventTime.text = eventArray[indexPath.row].time
+        cell.eventTime.text = "\(eventArray[indexPath.row].date) @: \(eventArray[indexPath.row].time)"
         cell.emptySpots.text = "Empty Spots: \(eventArray[indexPath.row].emptySpot)"
     return cell
     }

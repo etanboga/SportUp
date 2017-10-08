@@ -13,9 +13,7 @@ class SearchResultsViewController : UIViewController, UITableViewDataSource, UIT
     var selectedEvent: Event?
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventArray.append(Event(eventID: "aaaa", eventName: "ball", creatorID: "creator", eventSport: "ball", eventLocation: "space", creatorContact: "123", emptySpot: 4, time: "7-7.30"))
-
-        
+        searchResultsTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,15 +21,13 @@ class SearchResultsViewController : UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCell
-        cell.eventName.text = eventArray[indexPath.row].eventName
-        cell.eventLocation.text = eventArray[indexPath.row].eventLocation
-        cell.eventSport.text = eventArray[indexPath.row].eventSport
-        cell.eventTime.text = eventArray[indexPath.row].time
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resultCell", for: indexPath) as! SearchResultCell
+        cell.name.text = eventArray[indexPath.row].eventName
+        cell.location.text = eventArray[indexPath.row].eventLocation
+        cell.sport.text = eventArray[indexPath.row].eventSport
+        cell.time.text = "\(eventArray[indexPath.row].date) @: \(eventArray[indexPath.row].time)"
         cell.emptySpots.text = "Empty Spots: \(eventArray[indexPath.row].emptySpot)"
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showEventDetail", sender: self)
-    }
 }
+
