@@ -11,11 +11,12 @@ import UIKit
 class UpcomingEventsViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var eventTableView: UITableView!
     var eventArray = [Event] ()
-    var selectedEvent: Event?
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventArray.append(Event(eventID: "aaaa", eventName: "ball", creatorID: "creator", eventSport: "ball", eventLocation: "space", creatorContact: "123", emptySpot: 4, time: "7-7.30"))
-        eventTableView.reloadData()
+        EventService.loadUserEvents { (events) in
+            self.eventArray = events
+            self.eventTableView.reloadData()
+        }
         
     }
     

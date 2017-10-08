@@ -34,14 +34,14 @@ class Event {
     
     init?(snapshot: DataSnapshot) {
         guard let dict1 = snapshot.value as? [String : Any],
-            let eventName = dict1["eventNAme"] as? String,
-            let eventSport = dict1["eventSport"] as? String,
-            let eventLocation = dict1["eventLocation"] as? String,
-            let  emptySpot = dict1["emptySpot"] as? Int,
-            let time = dict1["time"] as? String
+            let eventName = dict1["name"] as? String,
+            let eventSport = dict1["sport"] as? String,
+            let eventLocation = dict1["location"] as? String,
+            let  emptySpot = dict1["emptySpots"] as? Int,
+            let time = dict1["time"] as? String,
+            let creatorID = dict1["creator"] as? String,
+            let creatorContact = dict1["contact"] as? String
             else { return nil }
-            let creatorID: String = User.current.uid
-            let creatorContact: String  = User.current.phoneNumber
         
         self.eventID = snapshot.key
         self.eventName = eventName
