@@ -547,6 +547,9 @@
                                 <state key="normal" title="Create Event">
                                     <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="createButtonTapped:" destination="15D-Ac-SRa" eventType="touchUpInside" id="mKu-Hg-TQy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
