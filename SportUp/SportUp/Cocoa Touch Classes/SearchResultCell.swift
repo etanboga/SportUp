@@ -10,7 +10,9 @@ import UIKit
 
 class SearchResultCell: UITableViewCell {
 
-    @IBOutlet weak var contactCreatorButton: UIButton!
+    @IBAction func contactButtonTapped(_ sender: UIButton) {
+                callNumber()
+    }
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var emptySpots: UILabel!
     @IBOutlet weak var time: UILabel!
@@ -25,5 +27,15 @@ class SearchResultCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    private func callNumber() {
+        
+        if let phoneCallURL = URL(string: "tel://\(3104294776)") {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+            }
+        }
     }
 }

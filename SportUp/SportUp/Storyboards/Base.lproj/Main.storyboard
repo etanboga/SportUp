@@ -272,6 +272,9 @@
                                                     <state key="normal" title="Contact Creator">
                                                         <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="contactButtonTapped:" destination="3wL-qH-nXU" eventType="touchUpInside" id="0WK-E0-WrS"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -288,7 +291,6 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="contactCreatorButton" destination="7Dk-2y-wcK" id="8GC-ep-rOX"/>
                                             <outlet property="emptySpots" destination="csh-Di-GQr" id="NMT-P8-MKF"/>
                                             <outlet property="location" destination="yUA-yH-bEj" id="ybe-rw-re2"/>
                                             <outlet property="name" destination="xu7-rN-tbE" id="LJv-l8-Sia"/>
