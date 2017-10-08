@@ -19,8 +19,8 @@ class AddDetailsViewController : UIViewController {
     @IBAction func finishSignUpTapped(_ sender: UIButton) {
         guard let firUser = Auth.auth().currentUser,
             let username = usernameTextField.text,
-            let phoneNumber = Int(phoneNumberTextField.text!),
-            !((phoneNumberTextField.text?.isEmpty)!),
+            let phoneNumber = phoneNumberTextField.text,
+            !phoneNumber.isEmpty,
             !username.isEmpty else { return }
         UserService.create(firUser, username: username, phoneNumber: phoneNumber) { (user) in
             guard let user = user else { return }
