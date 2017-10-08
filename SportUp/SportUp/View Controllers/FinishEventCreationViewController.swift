@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FinishEventCreationViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FinishEventCreationViewController : UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var emptySpotsTextField: UITextField!
@@ -16,6 +16,10 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
     var selectedLocation: String = ""
     var eventName: String = ""
     var timeFrame: String = ""
+    var selectedDate: String = ""
+    var emptySpots: Int = 0
+    var usedTimes = [String] ()
+    var availableTimes = [String] ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,47 +27,46 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
         print(selectedSport)
         print(eventName)
         formatDatePicker()
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Constants.timeArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath)
-        cell.textLabel?.text = Constants.timeArray[indexPath.row]
-        cell.textLabel?.textColor = UIColor(rgb: Constants.whiteishColor)
-        return cell
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let currentCell = tableView.cellForRow(at: indexPath)
-        timeFrame = currentCell?.textLabel?.text ?? ""
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor(rgb: Constants.darkBlue)
-        currentCell?.selectedBackgroundView = bgColorView
-    }
-    
-    @IBAction func createButtonTapped(_ sender: UIButton) {
-        let emptySpots: Int =  Int (emptySpotsTextField.text ?? "") ?? 0
-        print(eventName)
-        print(User.current.uid)
-        print(selectedSport)
-        print(selectedLocation)
-        print(User.current.phoneNumber)
-        print(emptySpots)
-        print(timeFrame)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM-dd-yy"
         var selectedDate = dateFormatter.string(from: datePicker.date)
         selectedDate = selectedDate.replacingOccurrences(of: "/", with: "-")
+//        EventService.loadSearchResults(sport: selectedSport, location: selectedLocation) { (searchResults) in
+//            for result in searchResults {
+//                if result.date == selectedDate {
+//                    self.usedTimes.append(result.time)
+//                }
+//            }
+//            for time in Constants.timeArray {
+//                if !self.usedTimes.contains(time) {
+//                    self.availableTimes.append(time)
+//                } else {
+//                    print("Not using: \(time)")
+//                }
+//            }
+//            self.availableTimes = self.availableTimes.sorted()
+//            self.availableTimeTableView.reloadData()
+//        }
+        
+    }
     
-       print(selectedDate)
-        EventService.createEvent(name: eventName, userID: User.current.uid, sport: selectedSport, location: selectedLocation, contact: User.current.phoneNumber, remainingSpots: emptySpots, time: timeFrame, date: selectedDate, completion: {(returnedEvent) in
-        })
-        self.navigationController?.popToRootViewController(animated: false)
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainTabBarController : UITabBarController = storyboard.instantiateViewController(withIdentifier: "mainTabBarVC") as! UITabBarController
-        mainTabBarController.selectedIndex = 1
-        self.present(mainTabBarController, animated: true, completion: nil)
+    @IBAction func seeAvailableTimesTapped(_ sender: UIButton) {
+        let emptySpotsLocal: Int =  Int (emptySpotsTextField.text ?? "") ?? 0
+//        print(eventName)
+//        print(User.current.uid)
+//        print(selectedSport)
+//        print(selectedLocation)
+//        print(User.current.phoneNumber)
+//        print(emptySpots)
+//        print(timeFrame)
+        self.emptySpots = emptySpotsLocal
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yy"
+        self.selectedDate = dateFormatter.string(from: datePicker.date)
+        self.selectedDate = selectedDate.replacingOccurrences(of: "/", with: "-")
+        performSegue(withIdentifier: "seeTimes", sender: self)
+    
+       //print(selectedDate)
     }
     
     func formatDatePicker() {
@@ -73,5 +76,12 @@ class FinishEventCreationViewController : UIViewController, UITableViewDelegate,
         datePicker.setValue(UIColor(rgb: Constants.whiteishColor), forKey: "textColor")
         datePicker.sizeToFit()
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! PickAvailableTimeViewController
+        destinationVC.eventName = eventName
+        destinationVC.selectedDate = selectedDate
+        destinationVC.selectedLocation = selectedLocation
+        destinationVC.selectedSport = selectedSport
+        destinationVC.emptySpots = emptySpots
+    }
 }

@@ -18,6 +18,7 @@
 		714D51301F88B3FD00549E67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714D512F1F88B3FD00549E67 /* User.swift */; };
 		7150B5B81F8997DC00536DA0 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150B5B71F8997DC00536DA0 /* SearchResultsViewController.swift */; };
 		7150B5BC1F89DEB900536DA0 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150B5BB1F89DEB900536DA0 /* SearchResultCell.swift */; };
+		7150B5C01F8A859F00536DA0 /* PickAvailableTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7150B5BF1F8A859E00536DA0 /* PickAvailableTimeViewController.swift */; };
 		7158468F1F8933960068DEF1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158468E1F8933960068DEF1 /* MainTabBarController.swift */; };
 		715846911F8934DE0068DEF1 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846901F8934DE0068DEF1 /* CreateEventViewController.swift */; };
 		715846931F8935020068DEF1 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */; };
@@ -49,6 +50,7 @@
 		714D512F1F88B3FD00549E67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7150B5B71F8997DC00536DA0 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		7150B5BB1F89DEB900536DA0 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		7150B5BF1F8A859E00536DA0 /* PickAvailableTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickAvailableTimeViewController.swift; sourceTree = "<group>"; };
 		7158468E1F8933960068DEF1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		715846901F8934DE0068DEF1 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		715846921F8935020068DEF1 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				715846961F89353B0068DEF1 /* SearchViewController.swift */,
 				71F56BAC1F8950DB002EA8E9 /* FinishEventCreationViewController.swift */,
 				7150B5B71F8997DC00536DA0 /* SearchResultsViewController.swift */,
+				7150B5BF1F8A859E00536DA0 /* PickAvailableTimeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				7158468F1F8933960068DEF1 /* MainTabBarController.swift in Sources */,
 				712CF8661F88A73D009C5C91 /* AppDelegate.swift in Sources */,
 				71F56BB11F896E35002EA8E9 /* Event.swift in Sources */,
+				7150B5C01F8A859F00536DA0 /* PickAvailableTimeViewController.swift in Sources */,
 				71CB90481F88D7FD00F453F2 /* AddDetailsViewController.swift in Sources */,
 				71F56BAD1F8950DB002EA8E9 /* FinishEventCreationViewController.swift in Sources */,
 				71F56BAF1F896DC1002EA8E9 /* EventService.swift in Sources */,

@@ -42,8 +42,8 @@ class CreateEventViewController : UIViewController, UIPickerViewDelegate, UIPick
         }
     }
     
-    @IBAction func seeAvailableTimesButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "seeTimes", sender: self)
+    @IBAction func pickDateAndEmptySpots(_ sender: UIButton) {
+        performSegue(withIdentifier: "selectDateandSpots", sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationViewController = segue.destination as! FinishEventCreationViewController

@@ -388,11 +388,11 @@
                                 <rect key="frame" x="0.0" y="534.5" width="375" height="53.5"/>
                                 <color key="backgroundColor" red="0.035294117647058823" green="0.40392156862745099" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="See Available Times">
+                                <state key="normal" title="Pick Date and Available Spots">
                                     <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="seeAvailableTimesButtonTapped:" destination="rPv-kC-FwF" eventType="touchUpInside" id="Sxl-rU-CJa"/>
+                                    <action selector="pickDateAndEmptySpots:" destination="rPv-kC-FwF" eventType="touchUpInside" id="ekV-eG-SLO"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybb-WM-7Rn">
@@ -437,7 +437,7 @@
                         <outlet property="eventNameTextField" destination="aB4-rY-I9S" id="aba-6P-gjc"/>
                         <outlet property="locationPickerView" destination="ybb-WM-7Rn" id="h2M-Vg-XVx"/>
                         <outlet property="sportsPickerView" destination="O2T-li-lVc" id="xzQ-Rg-unU"/>
-                        <segue destination="HVX-Db-XPN" kind="show" identifier="seeTimes" id="cOH-Dn-N4J"/>
+                        <segue destination="HVX-Db-XPN" kind="show" identifier="selectDateandSpots" id="cOH-Dn-N4J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sx4-aE-dBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -456,24 +456,24 @@
                                 <rect key="frame" x="0.0" y="534.5" width="375" height="53.5"/>
                                 <color key="backgroundColor" red="0.033736705780000001" green="0.40219405289999999" blue="0.53343290089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Create">
+                                <state key="normal" title="See Available Times">
                                     <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="createButtonTapped:" destination="HVX-Db-XPN" eventType="touchUpInside" id="9tE-cE-16s"/>
+                                    <action selector="seeAvailableTimesTapped:" destination="HVX-Db-XPN" eventType="touchUpInside" id="ye2-NV-a5D"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="l2e-t7-D5j">
-                                <rect key="frame" x="20" y="480.5" width="335" height="24"/>
+                                <rect key="frame" x="20" y="474.5" width="335" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty Spots:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7P-fL-ian">
-                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRQ-De-4qI">
-                                        <rect key="frame" x="167.5" y="0.0" width="167.5" height="24"/>
+                                        <rect key="frame" x="167.5" y="0.0" width="167.5" height="30"/>
                                         <color key="backgroundColor" red="0.033736705780000001" green="0.40219405289999999" blue="0.53343290089999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -481,27 +481,8 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FEV-Ah-fda">
-                                <rect key="frame" x="0.0" y="64" width="375" height="220"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" id="lRn-54-8dn">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lRn-54-8dn" id="pMS-jm-3ZL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="HVX-Db-XPN" id="bEM-2x-56u"/>
-                                    <outlet property="delegate" destination="HVX-Db-XPN" id="EDk-tt-20J"/>
-                                </connections>
-                            </tableView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="svl-GC-MFW">
-                                <rect key="frame" x="0.0" y="294" width="375" height="166.5"/>
+                                <rect key="frame" x="0.0" y="233" width="375" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="529126150.20513701">
                                     <!--2017-10-08 03:29:10 +0000-->
                                 </date>
@@ -509,16 +490,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="MDd-b4-NcD" firstAttribute="trailing" secondItem="FEV-Ah-fda" secondAttribute="trailing" id="2ua-ii-A7b"/>
-                            <constraint firstItem="l2e-t7-D5j" firstAttribute="top" secondItem="svl-GC-MFW" secondAttribute="bottom" constant="20" id="50V-C9-qAP"/>
                             <constraint firstItem="svl-GC-MFW" firstAttribute="trailing" secondItem="MDd-b4-NcD" secondAttribute="trailing" id="8W2-vN-1vr"/>
-                            <constraint firstItem="FEV-Ah-fda" firstAttribute="leading" secondItem="MDd-b4-NcD" secondAttribute="leading" id="Dps-qg-gD6"/>
-                            <constraint firstItem="FEV-Ah-fda" firstAttribute="top" secondItem="MDd-b4-NcD" secondAttribute="top" id="HUv-JD-BIB"/>
                             <constraint firstItem="svl-GC-MFW" firstAttribute="leading" secondItem="MDd-b4-NcD" secondAttribute="leading" id="IiF-cT-qL1"/>
-                            <constraint firstItem="FEV-Ah-fda" firstAttribute="height" secondItem="jY9-sW-MZ8" secondAttribute="height" multiplier="0.33" id="Mt6-D2-2OJ"/>
-                            <constraint firstItem="svl-GC-MFW" firstAttribute="top" secondItem="FEV-Ah-fda" secondAttribute="bottom" constant="10" id="O4h-WA-VrR"/>
                             <constraint firstItem="lRR-en-z2c" firstAttribute="leading" secondItem="MDd-b4-NcD" secondAttribute="leading" id="Qby-Op-wiH"/>
                             <constraint firstItem="MDd-b4-NcD" firstAttribute="trailing" secondItem="lRR-en-z2c" secondAttribute="trailing" id="cQO-5U-Cg6"/>
+                            <constraint firstItem="svl-GC-MFW" firstAttribute="centerY" secondItem="MDd-b4-NcD" secondAttribute="centerY" id="kgL-fX-DJk"/>
                             <constraint firstItem="l2e-t7-D5j" firstAttribute="leading" secondItem="MDd-b4-NcD" secondAttribute="leading" constant="20" id="lDf-Co-Iau"/>
                             <constraint firstItem="MDd-b4-NcD" firstAttribute="bottom" secondItem="lRR-en-z2c" secondAttribute="bottom" constant="30" id="phX-je-mcI"/>
                             <constraint firstItem="lRR-en-z2c" firstAttribute="top" secondItem="l2e-t7-D5j" secondAttribute="bottom" constant="30" id="sYq-RH-d7E"/>
@@ -530,11 +506,69 @@
                     <connections>
                         <outlet property="datePicker" destination="svl-GC-MFW" id="vNx-7Q-ruP"/>
                         <outlet property="emptySpotsTextField" destination="pRQ-De-4qI" id="Ggh-0l-nxW"/>
+                        <segue destination="15D-Ac-SRa" kind="show" identifier="seeTimes" id="WPO-mp-yR6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3v-7N-xj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2092" y="-483"/>
+        </scene>
+        <!--Pick Available Time View Controller-->
+        <scene sceneID="sBt-Xk-uKf">
+            <objects>
+                <viewController id="15D-Ac-SRa" customClass="PickAvailableTimeViewController" customModule="SportUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTE-oa-7ZA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8C6-y4-TTb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="475.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeCell" id="H3R-R7-VBt">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H3R-R7-VBt" id="Ewt-rh-m7f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="15D-Ac-SRa" id="VOm-Sd-86f"/>
+                                    <outlet property="delegate" destination="15D-Ac-SRa" id="ubX-Z8-gj7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atP-hQ-XEj">
+                                <rect key="frame" x="0.0" y="544.5" width="375" height="53.5"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.4039215686" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Event">
+                                    <color key="titleColor" red="1" green="0.94509803920000002" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8C6-y4-TTb" firstAttribute="leading" secondItem="FTE-oa-7ZA" secondAttribute="leading" id="0QN-Lq-7ik"/>
+                            <constraint firstItem="8C6-y4-TTb" firstAttribute="top" secondItem="PPW-hh-EtR" secondAttribute="top" id="2aX-i7-Nu6"/>
+                            <constraint firstItem="atP-hQ-XEj" firstAttribute="top" secondItem="8C6-y4-TTb" secondAttribute="bottom" constant="5" id="7We-kl-qv2"/>
+                            <constraint firstItem="atP-hQ-XEj" firstAttribute="leading" secondItem="PPW-hh-EtR" secondAttribute="leading" id="DqJ-hQ-AP3"/>
+                            <constraint firstItem="PPW-hh-EtR" firstAttribute="bottom" secondItem="atP-hQ-XEj" secondAttribute="bottom" constant="20" id="GcD-Rq-Ium"/>
+                            <constraint firstItem="PPW-hh-EtR" firstAttribute="trailing" secondItem="8C6-y4-TTb" secondAttribute="trailing" id="VEP-s6-3aZ"/>
+                            <constraint firstItem="atP-hQ-XEj" firstAttribute="height" secondItem="FTE-oa-7ZA" secondAttribute="height" multiplier="0.08" id="tXm-xe-8Xh"/>
+                            <constraint firstItem="PPW-hh-EtR" firstAttribute="trailing" secondItem="atP-hQ-XEj" secondAttribute="trailing" id="xrq-f8-NPm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PPW-hh-EtR"/>
+                    </view>
+                    <connections>
+                        <outlet property="availableTimeTableView" destination="8C6-y4-TTb" id="HY6-pr-QOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DND-16-TXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866" y="-476"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="3Ei-5L-D5I">
