@@ -13,6 +13,7 @@ class SearchResultCell: UITableViewCell {
     @IBAction func contactButtonTapped(_ sender: UIButton) {
         tapped?(self)
     }
+    @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var emptySpots: UILabel!
     @IBOutlet weak var time: UILabel!
