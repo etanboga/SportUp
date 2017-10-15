@@ -221,9 +221,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-yy-6Qz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8h8-yy-6Qz">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.035294117649999998" green="0.4039215686" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resultCell" rowHeight="200" id="3wL-qH-nXU" customClass="SearchResultCell" customModule="SportUp" customModuleProvider="target">
@@ -329,6 +328,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.027450980390000001" green="0.62745098040000002" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8h8-yy-6Qz" firstAttribute="trailing" secondItem="n13-PX-CU6" secondAttribute="trailing" id="9eu-Vt-rWI"/>
+                            <constraint firstItem="8h8-yy-6Qz" firstAttribute="leading" secondItem="n13-PX-CU6" secondAttribute="leading" id="GK7-ga-wZ7"/>
+                            <constraint firstItem="8h8-yy-6Qz" firstAttribute="bottom" secondItem="n13-PX-CU6" secondAttribute="bottom" id="KaF-O2-IO1"/>
+                            <constraint firstItem="8h8-yy-6Qz" firstAttribute="top" secondItem="n13-PX-CU6" secondAttribute="top" id="vTC-Gy-ddK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="n13-PX-CU6"/>
                     </view>
                     <connections>
